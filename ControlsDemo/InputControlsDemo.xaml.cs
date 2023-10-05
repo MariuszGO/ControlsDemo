@@ -9,8 +9,6 @@ public partial class InputControlsDemo : ContentPage
 
 	private	void OnCheckBoxCheckedChanged(object sender, EventArgs e)
 	{
-	
-
 		if ( check1.IsChecked )
 		{
 
@@ -36,7 +34,20 @@ public partial class InputControlsDemo : ContentPage
         }
 
     }
-	
+		private void przelacznik(object sender, EventArgs e)
+	{
+        if (prze.IsToggled)
+        {
+
+            etykieta2.Text = "Zaznaczony";
+        }
+        else
+        {
+            etykieta2.Text = "Brak";
+        }
+
+    }
+
      private void stepper_ValueChanged(object sender, ValueChangedEventArgs e)
      {
 		  if (stepper != null)

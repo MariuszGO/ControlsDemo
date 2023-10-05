@@ -22,14 +22,30 @@
 
         <Stepper x:Name="stepper" 
                      ValueChanged="stepper_ValueChanged"
-                     Maximum="10"
-                     Minimum="2"
-                     Increment="2"/>
+                     Maximum="500"
+                     Minimum="0"
+                     Increment="100"
+                     Value="100"       
+                      
+                 />
 
-        <Switch IsToggled="True"/>
+        <Switch x:Name="prze"
+                IsToggled="True"
+                OnColor="LightCoral"
+                ThumbColor="Violet"
+                Opacity="0.2"
+                Toggled="przelacznik"/>
+        <Label x:Name="etykieta2"/>
 
 
-        <DatePicker />
+        <DatePicker 
+            MaximumDate="12/31/2023"
+            MinimumDate="01/01/2023"
+            Date="9/01/2023"
+            Format="f"
+            FontSize="30"
+            
+            />
         <TimePicker/>
         
     </StackLayout>
